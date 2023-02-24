@@ -42,7 +42,7 @@ public class ViajeController {
         );
     }
 
-    @PutMapping("/")
+    @PutMapping("/{id}")
     public ResponseEntity update(
             @PathVariable Long id,
             @RequestBody ViajeDto viaje
